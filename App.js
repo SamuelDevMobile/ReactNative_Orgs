@@ -5,6 +5,8 @@ import {
     Montserrat_400Regular,
     Montserrat_700Bold
    } from '@expo-google-fonts/montserrat';
+   
+   import mock from './src/mocks/cesta'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -19,7 +21,7 @@ export default function App() {
   return (
     <SafeAreaView>
       <StatusBar />
-      <Cesta />
+      <Cesta {...mock} />
     </SafeAreaView>
   );
 }
