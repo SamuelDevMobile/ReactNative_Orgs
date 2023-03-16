@@ -1,25 +1,26 @@
 import { Image, Text, StyleSheet, Dimensions, View } from "react-native"
 import topo from '../../assets/topo.png'
 import logo from '../../assets/logo.png'
+import Texto from '../components/Texto'
 
 const width = Dimensions.get('screen').width
 
 export default function Cesta() {
     return <>
         <Image source={topo} style={styles.topo}/>
-        <Text style={styles.titulo}>Detalhe da cesta</Text>
+        <Texto style={styles.titulo}>Detalhe da cesta</Texto>
 
         <View style={styles.cesta}>
-            <Text style={styles.nome} >Cesta de Verduras</Text>
+            <Texto style={styles.nome} >Cesta de Verduras</Texto>
                 <View style={styles.fazenda}>
                     <Image source={logo} style={styles.imagemFazenda} />
-                    <Text style={styles.nomeFazenda}>Jenny Jack Farm</Text>
+                    <Texto style={styles.nomeFazenda}>Jenny Jack Farm</Texto>
                 </View>
-            <Text style={styles.descricao}>
+            <Texto style={styles.descricao}>
                 Uma cesta com produtos selecionados 
                 cuidadosamente da fazenda direto para sua cozinha
-                </Text>
-            <Text style={styles.preco}>R$ 40,00</Text>
+                </Texto>
+            <Texto style={styles.preco}>R$ 40,00</Texto>
         </View>
     </>
 }
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         color: "white",
-        fontWeight: "bold",
+        fontWeight: 'bold',
         padding: 16,
     },
     cesta: {
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
         color: "#464646",
         fontSize: 26,
         lineHeight: 42,
-        fontFamily: "MontserratBold",
+        fontWeight: 'bold',
     },
     fazenda: {
         flexDirection: "row",
@@ -61,7 +62,6 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         marginLeft: 12,
-        fontFamily: "MontserratRegular",
     },
     descricao: {
         color: "#A3A3A3",
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     },
     preco: {
         color: "#2A9F85",
-        fontWeight: "bold",
+        fontWeight: 'bold',
         fontSize: 26,
         lineHeight: 42,
         marginTop: 8,
