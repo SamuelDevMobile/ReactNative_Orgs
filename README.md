@@ -49,7 +49,7 @@ expo --version
 Para ter acesso aos arquivos do projeto você pode clonar usando o seguinte comando:
 
 ```
-git clone https://github.com/alura-cursos/react-native-comecando-do-zero.git
+git clone https://github.com/SamuelDevMobile/Trabalho01-ReactNative.git
 ```
 
 ### ▶️ Rodando o Projeto
